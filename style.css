@@ -804,6 +804,335 @@ footer
     font-size: 0.8rem;
 }
 
+    /*  Mobile    */
+    @media (max-width: 768px) {
+      body {
+      
+      display: block;
+      margin: 0;
+      font-family: 'Secular', sans-serif;
+      width: 100%;
+    }
+    
+       
+        
+          header
+          {
+              background: rgb(0,0,0);
+              background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(19,134,171,1) 48%);
+              width: 100%;
+              height: 27vh;
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+              position: relative;
+    
+            }
+            .logo
+            {
+                width: 20vh;
+                height: 20vh;
+                margin-left: 0.5rem;
+                
+            }
+
+            #bloc1
+            {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 5vh;
+                width: 100%;
+                
+                
+            }
+            #maphoto 
+            {
+                margin: 5vh;
+                margin-bottom: 5vh;
+                width: 50vh;
+                height: 50vh;
+                border-radius: 60%;
+                object-fit: cover;
+    
+    
+            }
+            #info
+            {
+                
+                width: 100%; 
+                display: flex;
+                align-items: center; 
+                position: relative;
+                text-align: center;
+                
+
+            }
+            .titre1
+            {
+                font-size: 80%;
+            }
+            #bloc3
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #bloc5
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .galerie
+            {
+                flex-wrap: wrap;
+                height: 125vh;
+                font-size: 0.1rem;
+            }
+            
+            .deux
+            {
+                margin-top: 5vh;
+            }
+            .trois
+            {
+                margin-top: 5vh;
+                margin-bottom: 13vh;
+            }
+            .cinq
+            {
+                margin-top: 5vh;
+                padding-bottom: 13vh; 
+                box-shadow: 3px 9px 9px grey;
+            }
+            .six
+            {
+                margin-top: 5vh;
+                padding-bottom: 13vh; 
+                box-shadow: 3px 9px 9px grey;
+            }
+            .quatre
+            {
+                padding-bottom: 13vh; 
+                box-shadow: 3px 9px 9px grey;
+            }
+        
+            
+            .mongit
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 15px;
+                font-size: 1.2rem;
+                margin-bottom: 5vh;
+                text-align: center;
+                margin-left: 3vh;
+                font-weight: 600;
+        
+            }
+            .tel
+            {
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
+                font-size: 1.3rem;
+                margin-left: 5vh;
+                
+                
+                
+            }
+            .enveloppe
+            {
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
+                font-size: 1.3rem;
+                margin-left: 5vh;
+            }
+            .pointplan
+            {
+                display: flex;
+                justify-content: space-around;
+                gap: 18px;
+                font-size: 1.3rem;
+                margin-left: 5vh;
+                
+            }
+            .bougie
+            {
+                display: flex;
+                justify-content: space-around;
+                gap: 18px;
+                font-size: 1.3rem;
+                margin-left: 5vh;
+                
+            }
+            .realisation
+            {
+                position: absolute;
+                text-align: center;
+                font-size: 2rem;
+               
+                
+            }
+            footer
+            {
+                height: 40vh;
+            }
+            .labordure
+            {
+                width: 40vh;
+            }
+            
+            .lienmaquette2
+            {
+                color: white;
+                text-decoration: none;
+                margin-top: 4vh;
+                font-size: 0.9rem;
+                font-weight: 400;
+                border-radius: 15rem;
+                background-color: black;
+                padding: 1rem;
+                box-shadow:black 1rem 2rem 5rem;
+                text-align: center;
+            }
+            .liencreation
+            {
+                color: white;
+                text-decoration: none;
+                margin-top: 4vh;
+                font-size: 1rem;
+                font-weight: 400;
+
+                border-radius: 15rem;
+                background-color: black;
+                padding: 1rem;
+                box-shadow:black 1rem 2rem 3rem;
+            
+                
+            }
+            #bloc5
+            {
+                display: flex;
+                justify-content: space-around;
+                background-color: white;
+                position: relative;
+                margin-bottom: 0;
+                
+            }
+            .six
+            {
+                margin-bottom: 15vh;
+            }
+            {
+                margin-bottom: 0vh;
+            }
+            #menu__toggle 
+            {
+                opacity: 0;
+                margin-right: 3.5rem;
+            }
+  
+            #menu__toggle:checked ~ .menu__btn > span {
+                transform: rotate(45deg);
+            }
+            #menu__toggle:checked ~ .menu__btn > span::before {
+                top: 0;
+                transform: rotate(0);
+            }
+            #menu__toggle:checked ~ .menu__btn > span::after {
+                top: 0;
+                transform: rotate(90deg);
+            }
+            #menu__toggle:checked ~ .menu__box {
+                visibility: visible;
+                left: 0;
+                z-index: 999;
+                background-color: beige;
+            }
+            
+            .menu__btn {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 7vh;
+                height: 7vh;
+                cursor: pointer;
+                z-index: 1000;
+                
+            }
+            
+            .menu__btn > span,
+            .menu__btn > span::before,
+            .menu__btn > span::after {
+                display: block;
+                position: absolute;
+            
+                width: 100%;
+                height: 0.5vh;
+                background-color: black;
+                text-align: center;
+                transition-duration: .25s;
+                z-index: 1000;
+            }
+            .menu__btn > span::before {
+                content: '';
+                top: -8px;
+            }
+            .menu__btn > span::after {
+                content: '';
+                top: 8px;
+            }
+            
+            .menu__box {
+                display: block;
+                position: absolute;
+                visibility: hidden;
+                top: 0;
+                right: -100%;
+            
+                width: 300px;
+                height: 100%;
+            
+                margin: 0;
+                padding: 80px 0;
+            
+                list-style: none;
+            
+                background-color: #ECEFF1;
+                box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+            
+                transition-duration: .25s;
+            }
+            
+            .menu__item {
+                display: block;
+                padding: 12px 24px;
+            
+                color: #333;
+            
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+            
+                text-decoration: none;
+            
+                transition-duration: .25s;
+            }
+            .menu__item:hover {
+                background-color: #CFD8DC;
+            }       
+            }
+    }
+
+    /* Tablette*/
+    @media (min-width: 769px) and (max-width: 1024px) {
+      /* Place your tablet-specific styles here */
+    }
+
+    /* ordinateur */
+    @media (min-width: 1025px) {
+      /* Place your desktop-specific styles here */
+    }
 
 /* @media only screen and (max-width: 600px) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
